@@ -16,9 +16,6 @@ jobs:
       - name: Instalar dependências
         run: |
           pip install -r requirements.txt
-
-      - name: Instalar e configurar kernel Jupyter
-        run: |
           pip install notebook ipykernel
           python -m ipykernel install --user --name python3
 
@@ -34,4 +31,5 @@ jobs:
       - name: Executar notebook com papermill
         run: |
           papermill API_route_experiment.ipynb output.ipynb
+
 
