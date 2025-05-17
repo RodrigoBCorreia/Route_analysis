@@ -29,4 +29,4 @@ jobs:
 
       - name: Executar notebook com papermill
         run: |
-          papermill API_route.ipynb output.ipynb
+          papermill API_route_experiment.ipynb output.ipynb
