@@ -1,0 +1,19 @@
+
+#-------- add from local to GitHub
+
+# 1. Add all files (new, modified, deleted)
+git add .
+
+# 2. Commit with a message
+git commit -m "Update all files"
+
+# 3. Push to GitHub
+git push
+
+
+
+
+
+#-------- add from GitHub to local
+
+git pull
