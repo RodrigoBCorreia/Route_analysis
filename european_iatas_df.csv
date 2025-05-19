@@ -1,0 +1,439 @@
+Airport_name,Antwerp International Airport,IATA,Country
+Brussels,Brussels Airport,BRU,Belgium
+Brussels,Brussels South Charleroi Airport,CRL,Belgium
+Liège,Liège Airport,LGG,Belgium
+Ostend,Ostend-Bruges International Airport,OST,Belgium
+Ajaccio,Campo dell'Oro Airport,AJA,France
+Bastia,Poretta Airport,BIA,Unknown
+Beauvais,Beauvais-Tillé Airport,BVA,Unknown
+Bergerac,Bergerac-Roumanière Airport,EGC,Unknown
+Béziers,Béziers Cap d'Agde Airport,BZR,Unknown
+Biarritz,Biarritz Airport,BIQ,Unknown
+Bordeaux,Mérignac Airport,BOD,France
+Brest,Brest Bretagne Airport,BES,Unknown
+Carcassonne,Salvaza Airport,CCF,Unknown
+Châlons-en-Champagne,Châlons Vatry Airport,XCR,Unknown
+Chambéry,Chambéry-Savoie Airport,CMF,Unknown
+Dinard,Pleurtuit Airport,DNR,Unknown
+Figari,Figari Sud-Corse Airport,FSC,Unknown
+Grenoble,Grenoble-Isère Airport,GNB,Unknown
+Ile de Re,Île de Ré Airport,LRH,Unknown
+Lille,Lille Lesquin Airport,LIL,Unknown
+Limoges,Bellegarde Airport,LIG,Unknown
+Lyon,Saint-Exupéry Airport,LYS,France
+Marseille,Provence Airport,MRS,France
+Mulhouse,Basel-Mulhouse-Freiburg Airport,BSL,Unknown
+Nantes,Nantes Atlantique Airport,NTE,France
+Nice,Côte d'Azur Airport,NCE,France
+Nîmes,Garons Airport,FNI,Unknown
+Paris,Charles de Gaulle Airport,CDG,France
+Paris,Orly Airport,ORY,France
+Pau,Uzein Airport,PUF,Unknown
+Perpignan,Llabanère Airport,PGF,Unknown
+Poitiers,Biard Airport,PIS,Unknown
+Rodez,Marcillac Airport,RDZ,Unknown
+Saint Etienne,Bouthéon Airport,EBU,Unknown
+Strasbourg,Strasbourg Airport,SXB,Unknown
+Toulon,Hyères Le Palyvestre Airport,TLN,Unknown
+Toulouse,Blagnac Airport,TLS,France
+Tours,Tours Loire Valley Airport,TUF,Unknown
+Gibraltar,North Front Airport,GIB,Unknown
+Guernsey,Guernsey Airport,GCI,Unknown
+Jersey,Jersey Airport,JER,Unknown
+Cork,Cork Airport,ORK,Unknown
+Dublin,Dublin Airport,DUB,Ireland
+Kerry,Kerry Airport,KIR,Unknown
+Knock,Ireland West Airport Knock,NOC,Unknown
+Shannon,Shannon Airport,SNN,Unknown
+Isle of Man,Isle of Man Airport,IOM,Unknown
+Luxembourg City,Findel Airport,LUX,Unknown
+Amsterdam,Amsterdam Airport Schiphol,AMS,Netherlands
+Eindhoven,Eindhoven Airport,EIN,Netherlands
+Groningen,Groningen Airport Eelde,GRQ,Unknown
+Maastricht,Maastricht-Aachen Airport,MST,Unknown
+Rotterdam,Rotterdam The Hague Airport,RTM,Netherlands
+Beja,Beja Airport,BYJ,Unknown
+Faro,Faro Airport,FAO,Portugal
+Funchal,Madeira Airport,FNC,Portugal
+Porto Santo Island,Porto Santo Airport,PXO,Unknown
+Lisbon,Humberto Delgado Airport,LIS,Portugal
+Porto,Francisco Sá Carneiro Airport,OPO,Portugal
+Ponta Delgada,João Paulo II Airport,PDL,Portugal
+Terceira Island,Terceira Airport,TER,Unknown
+A Coruña,Alvedro Airport,LCG,Unknown
+Alicante,Alicante Airport,ALC,Unknown
+Almeria,Almería International Airport,LEI,Unknown
+Asturias,Asturias Airport,OVD,Unknown
+Barcelona,Barcelona Airport,BCN,Spain
+Fuerteventura,Fuerteventura Airport,FUE,Unknown
+Girona,Girona-Costa Brava Airport,GRO,Unknown
+Gran Canaria,Gran Canaria Airport,LPA,Unknown
+Granada,Granada Airport,GRX,Unknown
+Huesca,Huesca-Pirineos Airport,HSK,Unknown
+Ibiza,Ibiza Airport,IBZ,Unknown
+Jerez de la Frontera,Jerez Airport,XRY,Unknown
+La Palma,La Palma Airport,SPC,Unknown
+Lanzarote,Lanzarote Airport,ACE,Unknown
+Lleida,Alguaire Airport,ILD,Unknown
+Madrid,Madrid-Barajas Airport,MAD,Spain
+Málaga,Málaga Airport,AGP,Spain
+Menorca,Menorca Airport,MAH,Unknown
+Murcia,Murcia-San Javier Airport,MJV,Unknown
+Palma de Mallorca,Palma de Mallorca Airport,PMI,Unknown
+Reus,Reus Airport,REU,Unknown
+Santander,Santander Airport,SDR,Unknown
+Santiago de Compostela,Santiago de Compostela Airport,SCQ,Unknown
+Seville,Seville Airport,SVQ,Spain
+Tenerife,Tenerife North Airport,TFN,Unknown
+Tenerife,Tenerife South Airport,TFS,Unknown
+Valencia,Valencia Airport,VLC,Spain
+Valladolid,Valladolid Airport,VLL,Unknown
+Zaragoza,Zaragoza Airport,ZAZ,Unknown
+Graz,Graz Airport,GRZ,Unknown
+Klagenfurt,Klagenfurt Airport,KLU,Unknown
+Innsbruck,Innsbruck Airport,INN,Unknown
+Linz,Linz Airport,LNZ,Unknown
+Salzburg,Salzburg Airport,SZG,Unknown
+Vienna,Vienna International Airport,VIE,Austria
+Baden-Baden,Karlsruhe,FKB,Unknown
+Berlin,Berlin Tegel Airport,TXL,Unknown
+Berlin,Berlin Schönefeld Airport,SXF,Unknown
+Berlin,Berlin Brandenburg Airport,BER,Germany
+Bremen,Bremen Airport,BRE,Unknown
+Cologne,Cologne,CGN,Germany
+Dortmund,Dortmund Airport,DTM,Unknown
+Düsseldorf,Düsseldorf Airport,DUS,Unknown
+Frankfurt,Frankfurt Airport,FRA,Germany
+Frankfurt,Frankfurt-Hahn Airport,HHN,Unknown
+Freiburg im Breisgau,EuroAirport Basel–Mulhouse–Freiburg,MLH,Unknown
+Freiburg im Breisgau,EuroAirport Basel–Mulhouse–Freiburg,BSL,Unknown
+Freiburg im Breisgau,EuroAirport Basel–Mulhouse–Freiburg,EAP,Unknown
+Friedrichshafen,Friedrichshafen Airport,FDH,Unknown
+Hamburg,Hamburg Airport,HAM,Germany
+Hanover,Langenhagen Airport,HAJ,Unknown
+Leipzig,Leipzig,LEJ,Unknown
+Lübeck,Lübeck Airport,LBC,Unknown
+Memmingen,Memmingen Airport,FMM,Unknown
+Munich,Munich Airport,MUC,Germany
+Nuremberg,Albrecht Dürer Airport,NUE,Unknown
+Stuttgart,Stuttgart Airport,STR,Unknown
+Weeze,Weeze Airport,NRN,Unknown
+Athens,Athens International Airport,ATH,Greece
+Chania,Chania International Airport,CHQ,Unknown
+Chios Island,Chios Island National Airport,JKH,Unknown
+Corfu,Ioannis Kapodistrias Airport,CFU,Unknown
+Heraklion,Heraklion International Airport,HER,Unknown
+Kalamata,Kalamata International Airport,KLX,Unknown
+Karpathos Island,Karpathos Island National Airport,AOK,Unknown
+Kavala,Kavala International Airport,KVA,Unknown
+Kefalonia Island,Kefalonia Island International Airport,EFL,Unknown
+Kos Island,Kos Island International Airport,KGS,Unknown
+Mykonos Island,Mykonos Island National Airport,JMK,Unknown
+Mytilene,Mytilene International Airport,MJT,Unknown
+Preveza,Aktion National Airport,PVK,Unknown
+Rhodes,Rhodes International Airport,RHO,Unknown
+Samos,Samos International Airport,SMI,Unknown
+Santorini,Santorini National Airport,JTR,Unknown
+Skiathos Island,Skiathos Island National Airport,JSI,Unknown
+Skyros Island,Skyros Island National Airport,SKU,Unknown
+Thessaloniki,Thessaloniki International Airport,SKG,Unknown
+Volos,Nea Anchialos National Airport,VOL,Unknown
+Zakynthos,Zakynthos International Airport,ZTH,Unknown
+Alghero,Fertilia Airport,AHO,Unknown
+Ancona,Ancona Airport,AOI,Unknown
+Bari,Palese Airport,BRI,Unknown
+Bergamo,Orio al Serio Airport,BGY,Unknown
+Bologna,Bologna Airport,BLQ,Unknown
+Brescia,Brescia Airport,VBS,Unknown
+Brindisi,Brindisi Airport,BDS,Unknown
+Cagliari,Cagliari Airport,CAG,Unknown
+Catania,Fontanarossa Airport,CTA,Unknown
+Cuneo,Cuneo Levaldigi Airport,CUF,Unknown
+Florence,Peretola Airport,FLR,Italy
+Genoa,Cristoforo Colombo Airport,GOA,Unknown
+Lamezia,Lamezia Terme Airport,SUF,Unknown
+Milan,Linate Airport,LIN,Unknown
+Milan,Malpensa Airport,MXP,Italy
+Naples,Capodichino Airport,NAP,Italy
+Olbia,Costa Smeralda Airport,OLB,Unknown
+Palermo,Palermo Airport,PMO,Unknown
+Perugia,San Egidio Airport,PEG,Unknown
+Pescara,Abruzzo Airport,PSR,Unknown
+Pisa,Galileo Galilei Airport,PSA,Unknown
+Rimini,Federico Fellini Airport,RMI,Unknown
+Rome,Leonardo da Vinci-Fiumicino Airport,FCO,Italy
+Rome,Rome Ciampino Airport,CIA,Unknown
+Trapani,Vincenzo Florio Airport,TPS,Unknown
+Trieste,Friuli Venezia Giulia Airport,TRS,Unknown
+Turin,Caselle Airport,TRN,Italy
+Venice,Venice Marco Polo Airport,VCE,Italy
+Verona,Verona Airport,VRN,Unknown
+Basel-Mulhouse-Freiburg,EuroAirport Basel–Mulhouse–Freiburg,BSL,Unknown
+Bern,Bern-Belp Airport,BRN,Unknown
+Geneva,Geneva International Airport,GVA,Switzerland
+St. Gallen,St. Gallen-Altenrhein Airport,ACH,Unknown
+Zurich,Zurich Airport,ZRH,Switzerland
+Bydgoszcz,Bydgoszcz Ignacy Jan Paderewski Airport,BZG,Unknown
+Gdańsk,Gdańsk Lech Wałęsa Airport,GDN,Unknown
+Katowice,Katowice International Airport,KTW,Unknown
+Kraków,John Paul II International Airport Kraków-Balice,KRK,Unknown
+Lublin,Lublin Airport,LUZ,Unknown
+Łódź,Łódź Władysław Reymont Airport,LCJ,Unknown
+Poznań,Poznań Ławica Airport,POZ,Unknown
+Rzeszów,Rzeszów-Jasionka Airport,RZE,Unknown
+Szczecin,"Szczecin-Goleniów ""Solidarność"" Airport",SZZ,Unknown
+Warsaw,Frédéric Chopin Airport,WAW,Poland
+Warsaw,Modlin Airport,WMI,Unknown
+Wrocław,Copernicus Airport Wrocław,WRO,Unknown
+Bucharest,Henri Coanda International Airport,OTP,Romania
+Cluj-Napoca,Cluj-Napoca International Airport,CLJ,Unknown
+Constanța,Mihail Kogălniceanu International Airport,CND,Unknown
+Iași,Iași International Airport,IAS,Unknown
+Oradea,Oradea International Airport,OMR,Unknown
+Sibiu,Sibiu International Airport,SBZ,Unknown
+Timișoara,Traian Vuia International Airport,TSR,Unknown
+Tirana,Tirana International Airport Nënë Tereza,TIA,Unknown
+Yerevan,Zvartnots International Airport,EVN,Unknown
+Gyumri,Shirak Airport,LWN,Unknown
+Baku,Heydar Aliyev International Airport,GYD,Unknown
+Ganja,Ganja International Airport,KVD,Unknown
+Nakhchivan,Nakhchivan Airport,NAJ,Unknown
+Qabala,Qabala International Airport,GBB,Unknown
+Lankaran,Lankaran International Airport,LLK,Unknown
+Grodno,Hrodna Airport,GNA,Unknown
+Gomel,Gomel Airport,GME,Unknown
+Minsk,Minsk International Airport,MSQ,Unknown
+Banja Luka,Banja Luka International Airport,BNX,Unknown
+Sarajevo,Sarajevo International Airport,SJJ,Unknown
+Tuzla,Tuzla International Airport,TZL,Unknown
+Mostar,Mostar International Airport,OMO,Unknown
+Burgas,Burgas Airport,BOJ,Unknown
+Plovdiv,Plovdiv Airport,PDV,Unknown
+Sofia,Sofia Airport,SOF,Bulgaria
+Varna,Varna Airport,VAR,Unknown
+Dubrovnik,Dubrovnik Airport,DBV,Unknown
+Zagreb,Franjo Tuđman Airport,ZAG,Unknown
+Osijek,Osijek Airport,OSI,Unknown
+Pula,Pula Airport,PUY,Unknown
+Rijeka,Rijeka Airport,RJK,Unknown
+Split,Split Airport,SPU,Unknown
+Zadar,Zadar Airport,ZAD,Unknown
+Larnaca,Larnaca International Airport,LCA,Unknown
+Paphos,Paphos International Airport,PFO,Unknown
+Tymbou,Ercan International Airport,ECN,Unknown
+Brno,Brno-Tuřany Airport,BRQ,Unknown
+Karlovy Vary,Karlovy Vary Airport,KLV,Unknown
+Ostrava,Leoš Janáček Ostrava Airport,OSR,Unknown
+Prague,Prague Václav Havel Airport,PRG,Czech Republic
+Pardubice,Pardubice Airport,PED,Unknown
+Tallinn,Lennart Meri Tallinn Airport,TLL,Estonia
+Tartu,Tartu Airport,TAY,Unknown
+Ambrolauri,Ambrolauri Airport,UGA,Unknown
+Batumi,Batumi International Airport,BUS,Unknown
+Kutaisi,Kutaisi International Airport,KUT,Unknown
+Mestia,Queen Tamar Airport,UGM,Unknown
+Natakhtari,Natakhtari Airfield,UGS,Unknown
+Sokhumi,Sukhumi Babushara Airport,SUI,Unknown
+Tbilisi,Tbilisi International Airport,TBS,Unknown
+Budapest,Budapest Ferenc Liszt International Airport,BUD,Hungary
+Debrecen,Debrecen International Airport,DEB,Unknown
+Hévíz,Hévíz-Balaton Airport,SOB,Unknown
+Győr-Pér,Győr-Pér International Airport,QGY,Unknown
+Pécs-Pogány,Pécs-Pogány International Airport,QPJ,Unknown
+Pristina,Pristina International Airport,PRN,Unknown
+Riga,Riga International Airport,RIX,Latvia
+Ventspils,Ventspils International Airport,VNT,Unknown
+Kaunas,Kaunas Airport,KUN,Unknown
+Palanga,Palanga International Airport,PLQ,Unknown
+Šiauliai,Šiauliai International Airport,SQQ,Unknown
+Vilnius,Vilnius International Airport,VNO,Lithuania
+Ohrid,Ohrid St. Paul the Apostle Airport,OHD,Unknown
+Skopje,Skopje Alexander the Great Airport,SKP,Unknown
+Luqa,Malta International Airport,MLA,Unknown
+Chişinău,Chişinău International Airport,KIV,Unknown
+Podgorica,Podgorica Airport,TGD,Unknown
+Tivat,Tivat Airport,TIV,Unknown
+Abakan,Abakan International Airport,ABA,Unknown
+Anadyr,Ugolny Airport,DYR,Unknown
+Anapa,Anapa Airport,AAQ,Unknown
+Arkhangelsk,Talagi Airport,ARH,Unknown
+Astrakhan,Narimanovo Airport,ASF,Unknown
+Barnaul,Barnaul Airport,BAX,Unknown
+Belgorod,Belgorod International Airport,EGO,Unknown
+Blagoveshchensk,Ignatyevo Airport,BQS,Unknown
+Bratsk,Bratsk Airport,BTK,Unknown
+Bryansk,Bryansk International Airport,BZK,Unknown
+Cheboksary,Cheboksary Airport,CSY,Unknown
+Chelyabinsk,Chelyabinsk Airport,CEK,Unknown
+Cherepovets,Cherepovets Airport,CEE,Unknown
+Chita,Kadala Airport,HTA,Unknown
+Elista,Elista Airport,ESL,Unknown
+Irkutsk,Irkutsk Airport,IKT,Unknown
+Grozny,Grozny Airport,GRV,Unknown
+Kaliningrad,Khrabrovo Airport,KGD,Unknown
+Kazan,Kazan Airport,KZN,Unknown
+Khabarovsk,Khabarovsk Novy Airport,KHV,Unknown
+Komsomolsk-on-Amur,Komsomolsk-on-Amur Airport,KXK,Unknown
+Krasnodar,Pashkovsky Airport,KRR,Unknown
+Krasnoyarsk,Yemelyanovo International Airport,KJA,Unknown
+Kursk,Kursk Vostochny Airport,URS,Unknown
+Magadan,Sokol Airport,GDX,Unknown
+Magnitogorsk,Magnitogorsk International Airport,MQF,Unknown
+Makhachkala,Uytash Airport,MCX,Unknown
+Mineralnye Vody,Mineralnye Vody Airport,MRV,Unknown
+Moscow,Domodedovo International Airport,DME,Unknown
+Moscow,Sheremetyevo International Airport,SVO,Unknown
+Moscow,Vnukovo Airport,VKO,Unknown
+Murmansk,Murmansk Airport,MMK,Unknown
+Nalchik,Nalchik Airport,NAL,Unknown
+Nizhnevartovsk,Nizhnevartovsk Airport,NJC,Unknown
+Nizhnekamsk,Begishevo Airport,NBC,Unknown
+Nizhny Novgorod,Strigino Airport,GOJ,Unknown
+Novokuznetsk,Spichenkovo Airport,NOZ,Unknown
+Novosibirsk,Tolmachevo Airport,OVB,Unknown
+Omsk,Omsk Tsentralny Airport,OMS,Unknown
+Orenburg,Orenburg Tsentralny Airport,REN,Unknown
+Orsk,Orsk Airport,OSW,Unknown
+Perm,Perm International Airport,PEE,Unknown
+Petrozavodsk,Petrozavodsk Airport,PES,Unknown
+Provideniya,Provideniya Bay Airport,PVS,Unknown
+Petropavlovsk-Kamchatsky,Yelizovo Airport,PKC,Unknown
+Pskov,Pskov Airport,PKV,Unknown
+Rostov-on-Don,Rostov-na-Donu Airport,ROV,Unknown
+Saint Petersburg,Pulkovo Airport,LED,Unknown
+Samara,Samara Kurumoch Airport,KUF,Unknown
+Saratov,Saratov Tsentralny Airport,RTW,Unknown
+Sochi,Sochi International Airport,AER,Unknown
+Stavropol,Stavropol Shpakovskoye Airport,STW,Unknown
+Surgut,Surgut International Airport,SGC,Unknown
+Syktyvkar,Syktyvkar Airport,SCW,Unknown
+Tomsk,Bogashevo Airport,TOF,Unknown
+Tyumen,Roshchino International Airport,TJM,Unknown
+Ulan-Ude,Baikal International Airport,UUD,Unknown
+Ulyanovsk,Ulyanovsk Vostochny Airport,ULY,Unknown
+Ufa,Ufa International Airport,UFA,Unknown
+Vladivostok,Vladivostok International Airport,VVO,Unknown
+Vladikavkaz,Beslan Airport,OGZ,Unknown
+Volgograd,Volgograd International Airport,VOG,Unknown
+Voronezh,Voronezh International Airport,VOZ,Unknown
+Yakutsk,Yakutsk Airport,YKS,Unknown
+Yaroslavl,Tunoshna Airport,IAR,Unknown
+Yekaterinburg,Koltsovo International Airport,SVX,Unknown
+Yuzhno-Sakhalinsk,Yuzhno-Sakhalinsk Airport,UUS,Unknown
+Belgrade,Belgrade Nikola Tesla Airport,BEG,Unknown
+Niš,Niš Constantine the Great Airport,INI,Unknown
+Bratislava,M. R. Štefánik Airport,BTS,Unknown
+Košice,Košice International Airport,KSC,Unknown
+Piešťany,Piešťany Airport,PZY,Unknown
+Poprad,Poprad-Tatry Airport,TAT,Unknown
+Sliač,Sliač Airport,SLD,Unknown
+Žilina,Žilina Airport,ILZ,Unknown
+Ljubljana,Ljubljana Jože Pučnik Airport,LJU,Unknown
+Maribor,Maribor Edvard Rusjan Airport,MBX,Unknown
+Portorož,Portorož Airport,POW,Unknown
+Adana,Şakirpaşa Airport,ADA,Unknown
+Ankara,Esenboğa International Airport,ESB,Unknown
+Antalya,Antalya Airport,AYT,Unknown
+Bodrum,Milas-Bodrum Airport,BJV,Unknown
+Bursa,Yenişehir Airport,YEI,Unknown
+Dalaman,Dalaman Airport,DLM,Unknown
+Gaziantep,Oğuzeli Airport,GZT,Unknown
+Istanbul,Atatürk International Airport,IST,Unknown
+Istanbul,Sabiha Gökçen International Airport,SAW,Unknown
+İzmir,Adnan Menderes Airport,ADB,Unknown
+Kayseri,Erkilet Airport,ASR,Unknown
+Konya,Konya Airport,KYA,Unknown
+Kütahya,Zafer Airport,KZR,Unknown
+Malatya,Erhaç Airport,MLX,Unknown
+Nevşehir,Kapadokya Airport,NAV,Unknown
+Samsun,Samsun-Çarşamba Airport,SZF,Unknown
+Trabzon,Trabzon Airport,TZX,Unknown
+Zonguldak,Zonguldak Airport,ONQ,Unknown
+Kiev,Boryspil International Airport,KBP,Unknown
+Chernivtsi,Chernivtsi International Airport,CWC,Unknown
+Donetsk,Donetsk Airport,DOK,Unknown
+Dnipro,Dnipropetrovsk International Airport,DNK,Unknown
+Kiev,Gostomel Airport,GML,Unknown
+Ivano-Frankivsk,Ivano-Frankivsk International Airport,IFO,Unknown
+Kharkiv,Kharkiv International Airport,HRK,Unknown
+Kryvyi Rih,Kryvyi Rih International Airport,KWG,Unknown
+Kiev,Kyiv Zhuliany International Airport,IEV,Unknown
+Luhansk,Luhansk International Airport,VSG,Unknown
+Lviv,Lviv Danylo Halytskyi International Airport,LWO,Unknown
+Mykolaiv Oblast,Mykolaiv International Airport,NLV,Unknown
+Odessa,Odessa International Airport,ODS,Unknown
+Simferopol,Simferopol International Airport,SIP,Unknown
+Zaporizhia,Zaporizhia International Airport,OZH,Unknown
+Aalborg,Aalborg Airport,AAL,Unknown
+Aarhus,Aarhus Airport,AAR,Unknown
+Billund,Billund Airport,BLL,Unknown
+Copenhagen,Copenhagen Airport,CPH,Denmark
+Vágar,Vágar Airport,FAE,Unknown
+Aland,Mariehamn Airport,MHQ,Unknown
+Helsinki,Helsinki-Vantaa Airport,HEL,Finland
+Kittilä,Kittilä Airport,KTT,Unknown
+Kuopio,Kuopio Airport,KUO,Unknown
+Kuusamo,Kuusamo Airport,KAO,Unknown
+Lappeenranta,Lappeenranta Airport,LPP,Unknown
+Oulu,Oulu Airport,OUL,Unknown
+Rovaniemi,Rovaniemi Airport,RVN,Unknown
+Tampere,Tampere-Pirkkala Airport,TMP,Unknown
+Turku,Turku Airport,TKU,Unknown
+Vaasa,Vaasa Airport,VAA,Unknown
+Akureyri,Akureyri Airport,AEY,Unknown
+Reykjavik,Keflavik International Airport,KEF,Unknown
+Reykjavik,Reykjavik Airport,RKV,Unknown
+Ålesund,Ålesund Airport,AES,Unknown
+Bergen,Bergen Airport,BGO,Unknown
+Bodø,Bodø Airport,BOO,Unknown
+Haugesund,Haugesund Airport,HAU,Unknown
+Kristiansand,Kristiansand Airport,KRS,Unknown
+Kristiansund,Kristiansund Airport,KSU,Unknown
+Oslo,Oslo Airport-Gardermoen,OSL,Norway
+Oslo,Moss Airport,RYG,Unknown
+Oslo,Sandefjord Airport,TRF,Unknown
+Stavanger,Stavanger Airport,SVG,Unknown
+Tromsø,Tromsø Airport,TOS,Unknown
+Trondheim,Trondheim Airport,TRD,Unknown
+Gothenburg,Gothenburg City Airport,GSE,Unknown
+Gothenburg,Göteborg Landvetter Airport,GOT,Unknown
+Luleå,Luleå Airport,LLA,Unknown
+Malmö,Malmö Airport,MMX,Unknown
+Norrköping,Norrköping Airport,NRK,Unknown
+Östersund,Åre Östersund Airport,OSD,Unknown
+Stockholm,Stockholm-Arlanda Airport,ARN,Sweden
+Stockholm,Stockholm-Bromma Airport,BMA,Unknown
+Stockholm,Stockholm-Skavsta Airport,NYO,Unknown
+Stockholm,Stockholm-Västerås Airport,VST,Unknown
+Umeå,Umeå Airport,UME,Unknown
+Växjö,Växjö Airport,VXO,Unknown
+Visby,Visby Airport,VBY,Unknown
+Birmingham,Birmingham International Airport,BHX,United Kingdom
+Bournemouth,Bournemouth Airport,BOH,Unknown
+Bristol,Bristol Airport,BRS,Unknown
+Cardiff,Cardiff Airport,CWL,Unknown
+Doncaster,Robin Hood Airport Doncaster Sheffield,DSA,Unknown
+Middlesbrough,Durham Tees Valley Airport,MME,Unknown
+Nottingham,East Midlands Airport,EMA,Unknown
+Exeter,Exeter International Airport,EXT,Unknown
+Leeds,Leeds Bradford International Airport,LBA,Unknown
+Liverpool,Liverpool John Lennon Airport,LPL,Unknown
+London,London City Airport,LCY,Unknown
+London,Gatwick Airport,LGW,United Kingdom
+London,Heathrow Airport,LHR,United Kingdom
+London,Luton Airport,LTN,Unknown
+London,Southend Airport,SEN,Unknown
+London,Stansted Airport,STN,Unknown
+Manchester,Manchester Airport,MAN,United Kingdom
+Newcastle upon Tyne,Newcastle Airport,NCL,Unknown
+Newquay,Newquay Cornwall Airport,NQY,Unknown
+Norwich,Norwich International Airport,NWI,Unknown
+Southampton,Southampton Airport,SOU,Unknown
+Aberdeen,Aberdeen Airport,ABZ,Unknown
+Edinburgh,Edinburgh Airport,EDI,United Kingdom
+Glasgow,Glasgow International Airport,GLA,Unknown
+Glasgow,Glasgow Prestwick Airport,PIK,Unknown
+Inverness,Inverness Airport,INV,Unknown
+Belfast,Belfast International Airport,BFS,Unknown
+Belfast,George Best Belfast City Airport,BHD,Unknown
+Derry,City of Derry Airport,LDY,Unknown
