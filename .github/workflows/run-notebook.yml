@@ -2,7 +2,7 @@ name: Fetch and Save Flights
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # todos os dias às 6:00 UTC
+    - cron: '0 3 * * *'  # todos os dias às 3:00 UTC
   workflow_dispatch:
 
 jobs:
