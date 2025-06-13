@@ -1,63 +1,23 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
+import os
 import requests
 import psycopg2
-import socket
 import json
 from datetime import datetime
 import time
-import requests
 from requests.exceptions import RequestException
-import asyncio
-import asyncpg
-from psycopg2 import pool
 import nest_asyncio
 
+# 🔐 Load credentials from environment variables
+HOST = os.environ.get("SUPABASE_HOST")
+DB = os.environ.get("SUPABASE_DB")
+USER = os.environ.get("SUPABASE_USER")
+PASSWORD = os.environ.get("SUPABASE_PASSWORD")
+PORT = os.environ.get("SUPABASE_PORT")
+API_KEY = os.environ.get("AVIATION_API_KEY")
 
-# In[2]:
-
-
-# Substitui com os teus dados reais
-HOST = "aws-0-eu-west-3.pooler.supabase.com"
-DB = "postgres"
-USER = "postgres.nhbyslgfifrxsubejasw"
-PASSWORD = "Database_99_!_route"  # Substitui por completo
-PORT = "6543"
-
-
-# In[3]:
-
-
-#Connect to the server
-
-print("🟡 A ligar ao Supabase...")
-connection = psycopg2.connect(
-    host=HOST,
-    database=DB,
-    user=USER,
-    password=PASSWORD,
-    port=PORT
-)
-
-print("✅ Ligação estabelecida com sucesso!")
-
-cursor = connection.cursor()
-cursor.execute("SELECT NOW();")
-resultado = cursor.fetchone()
-print("🕒 Hora atual no servidor:", resultado)
-
-# ✈️ API key and airport
-API_KEY = '428c81-3e9216'  # Replace with your actual API key
-
-
-# In[4]:
-
-
-# — Helper to format a timedelta into d h m s —
 def format_duration(td):
     total_seconds = int(td.total_seconds())
     days, rem = divmod(total_seconds, 86400)
@@ -73,22 +33,19 @@ def format_duration(td):
     parts.append(f"{seconds}s")
     return " ".join(parts)
 
-# 🔁 Buscar a lista de IATA dos aeroportos da Europa
-def get_european_airports():
+def get_european_airports(cursor):
     cursor.execute('SELECT "IATA" FROM public."Airports" WHERE "IATA" IS NOT NULL;')
     return [row[0] for row in cursor.fetchall()]
 
-# 📱 Obter voos para um aeroporto
 def get_flights(flight_type, airport_code, max_retries=3):
     url = f'https://aviation-edge.com/v2/public/timetable?key={API_KEY}&iataCode={airport_code}&type={flight_type}'
-    for attempt in range(1, max_retries+1):
+    for attempt in range(1, max_retries + 1):
         try:
             response = requests.get(url, timeout=10)
             response.raise_for_status()
             print(f"✅ {flight_type.capitalize()} flights fetched successfully for {airport_code}.")
             return response.json()
         except RequestException as e:
-            # This will catch DNS errors, timeouts, HTTP errors, etc.
             wait = 2 ** (attempt - 1)
             print(f"⚠️ [{airport_code}] Attempt {attempt}/{max_retries} failed: {e!r}")
             if attempt < max_retries:
@@ -98,9 +55,7 @@ def get_flights(flight_type, airport_code, max_retries=3):
                 print(f"❌ All {max_retries} attempts failed for {airport_code}. Skipping.")
     return []
 
-
-# 📂 Guardar os voos na base de dados
-def save_flights(flights, flight_type):
+def save_flights(flights, flight_type, cursor, connection):
     today = datetime.now().date()
     total = 0
     for flight in flights:
@@ -113,14 +68,14 @@ def save_flights(flights, flight_type):
             num = flight.get('flight', {}).get('iataNumber', '')
             dep_time = dep.get('scheduledTime')
             arr_time = arr.get('scheduledTime')
-            # skip duplicates
+
             cursor.execute('''
                 SELECT 1 FROM flights
                 WHERE flight_number=%s AND dep_time=%s AND arr_time=%s
             ''', (num, dep_time, arr_time))
             if cursor.fetchone():
                 continue
-            # insert
+
             cursor.execute('''
                 INSERT INTO flights(
                     flight_number, airline_iata, airline_name,
@@ -129,14 +84,14 @@ def save_flights(flights, flight_type):
                 ) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
             ''', (
                 num,
-                flight.get('airline', {}).get('iataCode',''),
-                flight.get('airline', {}).get('name',''),
-                dep.get('iataCode',''),
+                flight.get('airline', {}).get('iataCode', ''),
+                flight.get('airline', {}).get('name', ''),
+                dep.get('iataCode', ''),
                 dep_time,
-                arr.get('iataCode',''),
+                arr.get('iataCode', ''),
                 arr_time,
-                flight.get('regNumber',''),
-                flight.get('status',''),
+                flight.get('regNumber', ''),
+                flight.get('status', ''),
                 flight_type,
                 today
             ))
@@ -147,49 +102,54 @@ def save_flights(flights, flight_type):
     connection.commit()
     print(f"✅ {total} new {flight_type} flights saved to the database.")
 
-# 🕒 Timer start
-process_start = datetime.now()
-last_checkpoint = process_start
-print(f"🚀 Process started at: {process_start.strftime('%Y-%m-%d %H:%M:%S')}")
+def main():
+    print("🟡 Connecting to Supabase...")
+    connection = psycopg2.connect(
+        host=HOST,
+        database=DB,
+        user=USER,
+        password=PASSWORD,
+        port=PORT
+    )
+    print("✅ Connected successfully.")
 
-# 🚀 Executar para todos os aeroportos
-airports = get_european_airports()
-total = len(airports)
+    cursor = connection.cursor()
+    cursor.execute("SELECT NOW();")
+    server_time = cursor.fetchone()
+    print("🕒 Server time:", server_time)
 
-for idx, code in enumerate(airports, start=1):
-    print(f"\n🌍 Processing airport {idx}/{total}: {code}")
+    process_start = datetime.now()
+    last_checkpoint = process_start
+    print(f"🚀 Process started at: {process_start.strftime('%Y-%m-%d %H:%M:%S')}")
 
-    deps = get_flights('departure', code)
-    arrs = get_flights('arrival', code)
-    save_flights(deps, 'departure')
-    save_flights(arrs, 'arrival')
+    airports = get_european_airports(cursor)
+    total = len(airports)
 
-    now = datetime.now()
-    lap = now - last_checkpoint
-    total_elapsed = now - process_start
-    last_checkpoint = now
+    for idx, code in enumerate(airports, start=1):
+        print(f"\n🌍 Processing airport {idx}/{total}: {code}")
+        deps = get_flights('departure', code)
+        arrs = get_flights('arrival', code)
+        save_flights(deps, 'departure', cursor, connection)
+        save_flights(arrs, 'arrival', cursor, connection)
 
-    print(f"✅ Completed {idx}/{total}")
-    print(f"⏱️ {format_duration(lap)} since last • {format_duration(total_elapsed)} total")
-    print("-" * 40)
+        now = datetime.now()
+        lap = now - last_checkpoint
+        total_elapsed = now - process_start
+        last_checkpoint = now
 
-# 🕒 Timer end
-end = datetime.now()
-overall = end - process_start
+        print(f"✅ Completed {idx}/{total}")
+        print(f"⏱️ {format_duration(lap)} since last • {format_duration(total_elapsed)} total")
+        print("-" * 40)
 
-print(f"\n🎉 All {total} airports processed.")
-print(f"🕔 Completed at: {end.strftime('%Y-%m-%d %H:%M:%S')}")
-print(f"⏱️ Total duration: {format_duration(overall)}")
+    end = datetime.now()
+    overall = end - process_start
+    print(f"\n🎉 All {total} airports processed.")
+    print(f"🕔 Completed at: {end.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"⏱️ Total duration: {format_duration(overall)}")
 
+    cursor.close()
+    connection.close()
+    print("🔴 Connection closed.")
 
-# Properly close the connection
-cursor.close()
-connection.close()
-print("🔴 Ligação encerrada com sucesso!")
-
-
-# In[ ]:
-
-
-
-
+if __name__ == "__main__":
+    main()

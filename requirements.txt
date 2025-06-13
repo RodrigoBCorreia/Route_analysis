@@ -1,3 +1,4 @@
-papermill
-psycopg2-binary
 requests
+psycopg2-binary
+asyncpg
+nest_asyncio
